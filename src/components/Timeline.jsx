@@ -4,6 +4,11 @@ import {DateEntry, Notes, TimelineEntry } from "./Entry"
 export default function Timeline({user}) {
   return (
     <section className="relative flex flex-col w-full max-w-xl mx-auto timeline pt-4 md:pt-0">
+      <p className="text-[#ffff]">T</p>
+      <h1 className="text-slate-700 uppercase dark:text-slate-300 font-extrabold text-6xl text-center mb-7">
+        Timeline
+      </h1>
+      <hr />
       {
         user.map((timeline)=> (
           <div key={timeline._id}>

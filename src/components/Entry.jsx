@@ -24,6 +24,10 @@ export function Notes({ children }) {
   return <div className="-mt-2 prose timeline-inset prose-md">{children}</div>
 }
 
+export function ButtonSet({ children }) {
+  return <div className="flex flex-wrap space-y-3 md:space-y-0 md:space-x-3 timeline-inset ">{children}</div>
+}
+
 export function TimelineEntry({ children = null, title, timestamp, Icon, tint = "gray", divider = true }) {
   return (
     <div className="flex mb-10 timeline-item">
@@ -42,6 +46,16 @@ export function TimelineEntry({ children = null, title, timestamp, Icon, tint = 
         </div>
         <div className="flex flex-col space-y-4 timeline-full-width">{children}</div>
       </div>
+    </div>
+  )
+}
+
+export function DateEntry({ title }) {
+  return (
+    <div className="flex items-center mb-8 timeline-item">
+      <div className="w-12 mr-4 bg-gray-200 flex-0 timeline-stroke" />
+      <h2 className="text-4xl font-bold">{title}</h2>
+      <div className="flex-1 h-px ml-4 bg-gray-200 timeline-stroke" />
     </div>
   )
 }
