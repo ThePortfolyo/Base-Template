@@ -71,12 +71,3 @@ const Testimonials = ({user}) => {
 };
 
 export default Testimonials;
-
-// export default Testimonial
-//     <div>
-//       {
-//         user.map((props, index) => (
-//           // <h1>{props.name}</h1>
-//         ))
-//       }
-//     </div>

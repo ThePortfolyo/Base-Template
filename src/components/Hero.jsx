@@ -1,16 +1,9 @@
 import {
-  FaWhatsapp,
-  FaGithub,
   FaLinkedin,
   FaInstagram,
   FaTwitter,
   FaFacebook,
 } from "react-icons/fa";
-// import About from "./About";
-// import Tools from "./Tools";
-// import Testimonials from "./Testimonials";
-// import HighlightProjects from "./HighlightProjects";
-// import Contact from "./Contact";
 import { HashLink } from "react-router-hash-link";
 
 const Hero = ({user}) => {
@@ -25,10 +18,10 @@ const Hero = ({user}) => {
             {user.about.name}.
           </h1>
           <h2 className="text-2xl sm:text-3xl font-bold text-[#8892b0] dark:text-gray-800">
-            {user.about.title}
+            {user.about.subTitle}
           </h2>
           <p className="text-[#8892b0] py-4 max-w-[700px] dark:text-gray-700">
-            {user.about.subTitle}
+            {user.about.title}
             
           </p>
           <h3 className="text-[#8892b0] py-4 max-w-[700px] dark:text-gray-700">Currently in {user.about.address}</h3>
@@ -64,12 +57,6 @@ const Hero = ({user}) => {
           />
         </div>
       </div>
-
-      {/* <About />
-      <Tools />
-      <HighlightProjects />
-      <Testimonials />
-      <Contact /> */}
     </div>
   );
 };

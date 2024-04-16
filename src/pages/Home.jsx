@@ -55,6 +55,8 @@ function Home() {
     const filteredExperience = user?.timeline?.filter((item) => !item.forEducation && item.enabled);
 
     // console.log(sortedFilteredSkills)
+    console.log(filteredEducation)
+    // console.log(filteredExperience)
     if (isLoading) {
         return <div className="w-full h-screen bg-black flex items-center justify-center text-center">Loading..</div>;
     }
@@ -66,7 +68,7 @@ function Home() {
             <Skills/>
             <Projects user={sortedFilteredProject}/>
             <Services />
-            <Timeline />
+            <Timeline user={filteredEducation}/>
             <Testimonial user={filteredTestimonials}/>
             <Contact />
         </>

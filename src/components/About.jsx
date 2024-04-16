@@ -22,21 +22,6 @@ function About({user}) {
             <p>
               {user.description}
             </p>
-
-            {/* <p className="mt-3">
-              I create responsive websites from scratch for creatives ranging
-              from portfolio websites to functional websites for small
-              businesses so they can focus on what makes them money.
-            </p>
-
-            <p className="mt-3">
-              I'm intrested in design, writing, teaching, tech, and how small
-              technical parts works.
-            </p>
-
-            <p className="mt-3">
-              In my free time, I read about tech, gadgets and football.
-            </p> */}
           </div>
         </div>
       </div>

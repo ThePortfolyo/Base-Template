@@ -30,11 +30,6 @@ const Header = ({ user}) => {
         to="/"
         onClick={() => window.scrollTo(0, 0)}
       >
-        {/* <img
-          src={user.avatar}
-          alt="https://avatars.githubusercontent.com/u/74687658?v=4"
-          style={{ width: "40px", height: "40px", borderRadius: "50px" }}
-        /> */}
         <h1>{user.name}</h1>
       </Link>
       <ul className="hidden md:flex space-x-10 mr-4 text-sm">
@@ -43,9 +38,6 @@ const Header = ({ user}) => {
             Home
           </HashLink>
         </li>
-        {/* <li className="cursor-pointer">
-          <a href="https://blog.segunajibola.com">Blog</a>
-        </li> */}
         <li className="cursor-pointer">
           <HashLink to="/#about">About</HashLink>
         </li>
@@ -58,23 +50,12 @@ const Header = ({ user}) => {
         <li className="cursor-pointer">
           <HashLink to="/#services">Services</HashLink>
         </li>
-        {/* <li className="cursor-pointer">
-          <a href="https://drive.google.com/file/d/1Kel5_dyLuo-qTmlSmjTQZ0Gt46hjuPT5/view?usp=drive_link">
-            Resume
-          </a>
-        </li> */}
         <li className="cursor-pointer">
           <HashLink to="/#contact">Contact</HashLink>
         </li>
       </ul>
 
       <div className="flex gap-2">
-        {/* <div
-          onClick={handleMode}
-          className="z-30 cursor-pointer dark:text-gray-800"
-        >
-          {darkMode ? <FaMoon size={20} /> : <FaLightbulb size={20} />}
-        </div> */}
         <div
           onClick={handleClick}
           className="md:hidden z-30 cursor-pointer dark:text-gray-800"
@@ -95,15 +76,6 @@ const Header = ({ user}) => {
         } 
         `}
       >
-        {/* <li className={`${styles.sideNav} hover:-rotate-[10deg]`}>
-          <a
-            onClick={handleClick}
-            className="cursor-pointer"
-            href="https://blog.segunajibola.com"
-          >
-            Blog
-          </a>
-        </li> */}
         <li className={`${styles.sideNav} hover:rotate-[10deg]`}>
           <HashLink
             onClick={handleClick}
@@ -154,15 +126,6 @@ const Header = ({ user}) => {
             Testimonials
           </HashLink>
         </li>
-        {/* <li className={`${styles.sideNav} hover:rotate-[10deg]`}>
-          <a
-            onClick={handleClick}
-            className="cursor-pointer"
-            href="https://drive.google.com/file/d/1WeurDP0scU81V7QawRa7VlugkPBZfQta/view?usp=sharing"
-          >
-            Download Resume
-          </a>
-        </li> */}
       </ul>
 
       {/* Social icons */}
@@ -192,14 +155,6 @@ const Header = ({ user}) => {
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          {/* <li className="w-[100px] h-[40px] flex justify-between items-center ml-[-55px] hover:ml-[-0px] hover:px-1 duration-300 bg-[#565f69]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="https://drive.google.com/file/d/1WeurDP0scU81V7QawRa7VlugkPBZfQta/view?usp=sharing"
-            >
-              Resume <BsFillPersonLinesFill size={30} />
-            </a>
-          </li> */}
         </ul>
       </div>
     </div>

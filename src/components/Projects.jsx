@@ -1,6 +1,4 @@
-import React from "react";
 import { Link } from "react-router-dom";
-// import { project } from "../data/";
 import ProjectCard from "./ProjectCard";
 
 function Projects({user}) {
