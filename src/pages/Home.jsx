@@ -58,10 +58,10 @@ function Home() {
         return <div className="w-full h-screen bg-black flex items-center justify-center text-center">Loading..</div>;
     }
     return (
-        <>
-            <Header />
-            <Hero />
-            <About />
+        < >
+            <Header user= {user.about}/>
+            <Hero user= {user}/>
+            <About user= {user.about}/>
             <Skills />
             <Projects />
             <Services />
