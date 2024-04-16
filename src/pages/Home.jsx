@@ -57,7 +57,8 @@ function Home() {
     // console.log(sortedFilteredSkills)
     // console.log(filteredEducation)
     // console.log(filteredExperience)
-    console.log(filteredServices)
+    // console.log(filteredServices)
+    console.log(sortedFilteredSkills)
     if (isLoading) {
         return <div className="w-full h-screen bg-black flex items-center justify-center text-center">Loading..</div>;
     }
@@ -66,7 +67,7 @@ function Home() {
             <Header user= {user.about}/>
             <Hero user= {user}/>
             <About user= {user.about}/>
-            <Skills/>
+            <Skills user={sortedFilteredSkills}/>
             <Projects user={sortedFilteredProject}/>
             <Services user= {filteredServices}/>
             <Timeline user={filteredEducation}/>
