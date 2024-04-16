@@ -54,19 +54,24 @@ function Home() {
     const filteredEducation = user?.timeline?.filter((item) => item.forEducation && item.enabled);
     const filteredExperience = user?.timeline?.filter((item) => !item.forEducation && item.enabled);
 
+    // console.log(sortedFilteredSkills)
+    // console.log(filteredEducation)
+    // console.log(filteredExperience)
+    // console.log(filteredServices)
+    console.log(sortedFilteredSkills)
     if (isLoading) {
         return <div className="w-full h-screen bg-black flex items-center justify-center text-center">Loading..</div>;
     }
     return (
-        <>
-            <Header />
-            <Hero />
-            <About />
-            <Skills />
-            <Projects />
-            <Services />
-            <Timeline />
-            <Testimonial />
+        < >
+            <Header user= {user.about}/>
+            <Hero user= {user}/>
+            <About user= {user.about}/>
+            <Skills user={sortedFilteredSkills}/>
+            <Projects user={sortedFilteredProject}/>
+            <Services user= {filteredServices}/>
+            <Timeline user={filteredEducation}/>
+            <Testimonial user={filteredTestimonials}/>
             <Contact />
         </>
     );

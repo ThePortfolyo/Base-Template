@@ -4,12 +4,14 @@ import Home from './pages/Home';
 
 function App() {
     return (
-        <Router>
-        <Routes>
-            <Route path="/" element={<Home />} />
-            {/* <Route path="/:user" element={<Home />} /> */}
-        </Routes>
-    </Router>
+        <div className={"overflow-hidden" } id="dark">
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    {/* <Route path="/:user" element={<Home />} /> */}
+                </Routes>
+            </Router>
+        </div>
     );
 }
 
