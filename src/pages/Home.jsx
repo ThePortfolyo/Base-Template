@@ -9,10 +9,11 @@ import Projects from '../components/Projects';
 import Timeline from '../components/Timeline';
 import Testimonial from '../components/Testimonial';
 import Contact from '../components/Contact';
+import HomeBody from '../components/HomeBody';
 function Home() {
     const params = useParams();
     const navigate = useNavigate();
-    
+
     const userId = '65b3a22c01d900e96c4219ae'; //John doe
 
     const BASE_URL = 'https://portfolio-backend-30mp.onrender.com/api/v1';
@@ -44,8 +45,7 @@ function Home() {
     }, [params?.user, userId, navigate]);
     console.log(user);
 
-
-// filtering all the data from the API
+    // filtering all the data from the API
     const sortedFilteredSkills = user?.skills?.filter((item) => item.enabled)?.sort((a, b) => a.sequence - b.sequence);
     const sortedFilteredProject = user?.projects?.filter((item) => item.enabled)?.sort((a, b) => a.sequence - b.sequence);
     const filteredServices = user?.services?.filter((item) => item.enabled);
@@ -58,17 +58,15 @@ function Home() {
         return <div className="w-full h-screen bg-black flex items-center justify-center text-center">Loading..</div>;
     }
     return (
-        <>
-            <Header />
-            <Hero />
-            <About />
-            <Skills />
-            <Projects />
-            <Services />
-            <Timeline />
-            <Testimonial />
-            <Contact />
-        </>
+        <div className="">
+            <HomeBody user={user} />
+            <About user={user} />
+            <Services user={user} />
+            <Projects user={user} />
+            <Skills user={user} />
+            <Timeline user={user} />
+            <Testimonial user={user} />
+        </div>
     );
 }
 
