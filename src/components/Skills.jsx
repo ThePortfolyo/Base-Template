@@ -41,7 +41,7 @@ function Skills(user) {
                         {skillsData
                             ? skillsData.map((ele) => {
                                   return (
-                                      <div className="w-96 h-36 p-4 rounded-md ring-1 ring-zinc-600 space-y-2 hover:cursor-pointer  transition ease-in-out delay-150  hover:-translate-y-0 hover:scale-110  duration-300">
+                                      <div className="md:w-96 w-80 h-36 p-4 rounded-md ring-1 ring-zinc-600 space-y-2 hover:cursor-pointer  transition ease-in-out delay-150  hover:-translate-y-0 hover:scale-110  duration-300">
                                           <img src={ele.image.url} className="h-10 w-fit" />
                                           <h1 className="text-xl font-mono ">{ele.name}</h1>
                                           <Box sx={{ width: '10' }}>

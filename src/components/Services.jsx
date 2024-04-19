@@ -10,7 +10,7 @@ function Services(user) {
                     {service
                         ? service.map((ele) => {
                               return (
-                                  <div className="w-96 h-52  rounded-md ring-1 ring-zinc-600 px-4 space-y-4 hover:cursor-pointer  transition ease-in-out delay-150  hover:-translate-y-0 hover:scale-110  duration-300">
+                                  <div className="md:w-96 w-80 h-52  rounded-md ring-1 ring-zinc-600 px-4 space-y-4 hover:cursor-pointer  transition ease-in-out delay-150  hover:-translate-y-0 hover:scale-110  duration-300">
                                       <div className="flex items-center pt-5">
                                           <img src={ele.image.url} className="h-8 rounded-full" />
                                           <h1 className="text-xl font-mono pl-4">{ele.name}</h1>

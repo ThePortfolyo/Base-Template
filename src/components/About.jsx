@@ -21,15 +21,15 @@ export default function About({ user }) {
                           })
                         : null}
                 </div>
-                <div className=" md:w-3/4 w-full space-y-3">
+                <div className=" md:w-3/4 w-80 space-y-3">
                     <p className="">{aboutData.subTitle}</p>
                     <p className="text-zinc-400">{aboutData.description}</p>
                 </div>
-                <div className=" grid grid-cols-2   md:gap-1 gap-0.5 font-medium   md:w-3/4 w-full font-mono md:pt-10 pt-3">
+                <div className=" grid grid-cols-2   md:gap-1 gap-0.5 font-medium   md:w-3/4 w-60     font-mono md:pt-10 pt-3">
                     <h1 className=" text-lg">Location : </h1>
                     <h1 className="font-medium text-zinc-400">{aboutData.address} </h1>
                     <h1 className=" text-lg">Email :</h1>
-                    <h1 className="text-lg text-zinc-400">{aboutData.contactEmail} </h1>
+                    <p className="text-lg text-zinc-400 ">{aboutData.contactEmail} </p>
                     <h1 className="">PhoneNumber :</h1>
                     <h1 className="text-lg text-zinc-400">{aboutData.phoneNumber} </h1>
                 </div>
