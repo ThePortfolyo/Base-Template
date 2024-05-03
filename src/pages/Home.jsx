@@ -64,8 +64,8 @@ function Home() {
             <Services user={user} />
             <Projects user={user} />
             <Skills user={user} />
-            <Timeline user={user} />
-            <Testimonial user={user} />
+            {/* <Timeline user={user} />
+            <Testimonial user={user} /> */}
         </div>
     );
 }
