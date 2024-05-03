@@ -19,7 +19,7 @@ export default function About() {
                     <h1>PhoneNumber : 7388334666</h1>
                 </div>
             </div>
-            <div className="pt-16">
+            <div className="pt-16 md:px-16 px-0">
                 <p className=" ring-1 ring-zinc-400 "></p>
             </div>
         </div>

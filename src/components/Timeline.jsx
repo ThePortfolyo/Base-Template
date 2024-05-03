@@ -1,48 +1,28 @@
 import React from 'react';
 
-import { SlLocationPin } from 'react-icons/sl';
-
-function Timeline(user) {
-    const timelineData = user.user?.timeline;
-
-    const DateMethod = (userData) => {
-        let d = userData.userData;
-        const dateTime = new Date(d);
-        const newDate = dateTime.toLocaleDateString();
-        return newDate;
-    };
+function Timeline() {
     return (
         <div>
-            <div className="md:px-24 pl-3 md:py-16 py-4 px-4 ">
-                <h1 className=" text-xl font-medium font-mono">Timelines</h1>
-                <div className="   grid grid-cols-1 gap-9 mt-4 border-l border-white">
-                    {timelineData
-                        ? timelineData.map((ele) => {
-                              return (
-                                  <div className="pl-5 ">
-                                      <div className=" space-x-2">
-                                          <div className=" flex space-x-2">
-                                              <h1 className="md:text-xl text-base font-mono ">{ele.jobTitle}</h1>
-                                              <h1 className="text-sm font-mono bg-blue-900 px-4 py-1 text-zinc-300 rounded-md w-fit">
-                                                  {ele.company_name}
-                                              </h1>
-                                          </div>
-                                      </div>
-                                      <div className="flex items-center space-x-3 text-zinc-400">
-                                          <SlLocationPin className="text-yellow-600" />
-                                          <h1 className="">City: {ele.jobLocation}</h1>
-                                      </div>
-                                      <div className="text-zinc-400">
-                                          <DateMethod userData={ele.startDate} />
-                                          &nbsp; - &nbsp;
-                                          <DateMethod userData={ele.endDate} />
-                                      </div>
-                                      <p className="text-zinc-400">{ele.summary}</p>
-                                      <h1 className="md:text-xl text-base font-mono text-zinc-400  ">{ele.review}</h1>
-                                  </div>
-                              );
-                          })
-                        : null}
+            <div className="md:px-24 pl-3 md:py-16 py-10 px-4 pt-10">
+                <h1 className=" text-2xl font-medium font-mono">Education</h1>
+                <div className="flex flex-col md:pl-32 space-y-6 pt-5">
+                    <div>
+                        <span className="text-lg text-indigo-400 font-semibold">Postgraduation : </span>
+                        <div className="md:pl-40 pl-2 pt-2">
+                            <span>Currently i am pursuing my MAC from Institute of Computer Science and Technology Varanasi</span>
+                            <p>Affliated from A.P.J. Abdul Kalam Technical University</p>
+                            <p></p>
+                            <p> Duration : from 2022 to 2024</p>
+                        </div>
+                    </div>
+                    <div>
+                        <span className="text-lg font-semibold text-indigo-400 ">Undergraudation :</span>
+                        <div className="md:pl-40 pl-2 pt-2">
+                            <span className="">I have complete my BA from BHU in hindi (Arts)</span>
+                            <p> Marks : 7.5 cgpa</p>
+                            <p> Duration : from 2019 to 2022</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="md:px-24 px-4">

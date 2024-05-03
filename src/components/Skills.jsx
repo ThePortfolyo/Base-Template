@@ -62,7 +62,7 @@ function Skills(user) {
         <>
             <div>
                 <div className="md:px-24 pl-3 md:py-16 py-4 px-4">
-                    <h1 className=" text-xl font-medium font-mono">Skills</h1>
+                    <h1 className=" text-2xl font-medium font-mono">Skills</h1>
                     <div className="md:grid-cols-3 grid grid-cols-1 gap-10 place-items-center pt-10">
                         <SkillsComp image={react} name="React" value="80" />
                         <SkillsComp image={next} name="Next" value="50" />

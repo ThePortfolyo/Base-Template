@@ -27,7 +27,7 @@ function Projects() {
         <>
             <div>
                 <div className="md:px-24 pl-3 md:py-16 py-4 px-4">
-                    <h1 className=" text-2xl font-medium font-mono">Services</h1>
+                    <h1 className=" text-2xl font-medium font-mono">Projects</h1>
                     <div className="md:grid-cols-3 grid grid-cols-1 gap-10 place-items-center pt-10 ">
                         <Services image={sc1} projectname="PortfoloioDesign" technologies="ReactJs , TailwindCss , NodeJs" />
                         <Services image={sc2} projectname="Dhriti-Enterprises" technologies="NextJs , TailwindCss  " />
